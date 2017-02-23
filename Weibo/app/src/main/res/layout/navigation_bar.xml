@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_green"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal">
+
+        <View android:id="@+id/title_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar_line_bg"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout android:id="@+id/navigation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/friends"
+            style="@style/navigation_item"
+            android:text="@string/friends"/>
+        <TextView android:id="@+id/message"
+            style="@style/navigation_item"
+            android:text="@string/message"
+            android:checked="false" />
+        <TextView android:id="@+id/find"
+            style="@style/navigation_item"
+            android:text="@string/find"
+            android:checked="false" />
+        <TextView android:id="@+id/me"
+            style="@style/navigation_item"
+            android:text="@string/me"
+            android:checked="false" />
+
+    </LinearLayout>-->
+
+    <RadioGroup android:id="@+id/navigation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/friends"
+            style="@style/navigation_item"
+            android:text="@string/friends"/>
+        <RadioButton android:id="@+id/message"
+            style="@style/navigation_item"
+            android:text="@string/message"
+            android:checked="false" />
+        <RadioButton android:id="@+id/find"
+            style="@style/navigation_item"
+            android:text="@string/find"
+            android:checked="false" />
+        <RadioButton android:id="@+id/me"
+            style="@style/navigation_item"
+            android:text="@string/me"
+            android:checked="false" />
+
+    </RadioGroup>
+
+</LinearLayout>

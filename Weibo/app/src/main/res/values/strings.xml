@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Weibo</string>
+
+    <!--main-->
+    <string name="friends">首页</string>
+    <string name="message">消息</string>
+    <string name="find">发现</string>
+    <string name="me">我的</string>
+    <string name="retweet">转发</string>
+    <string name="comment">评论</string>
+    <string name="attitude">赞</string>
+    <string name="retweet_number">转发(%s)</string>
+    <string name="comment_number">评论(%s)</string>
+    <string name="attitude_number">赞(%s)</string>
+
+    <string name="follows">粉丝\n</string>
+    <string name="likes">关注\n</string>
+
+    <!--<string name="follows_people">粉丝</string>-->
+    <!--<string name="likes_people">关注</string>-->
+
+    <string name="prloading">正在配置调料&#8230;</string>
+    <string name="isloading">正在烘培&#8230;</string>
+    <string name="loaded">正在开始风土人情&#8230;</string>
+
+    <string name="aite">\@我的</string>
+
+    <string name="aite_item_weibo">\@我的微博</string>
+    <string name="aite_item_comment">\@我的评论</string>
+
+    <string name="comment_item_byme">发出的评论</string>
+    <string name="comment_item_tome">收到的评论</string>
+
+    <string name="find_public">公共微博</string>
+    <string name="find_hot">热门微博</string>
+    <string name="find_hot_comments">评论最多</string>
+    <string name="find_hot_repost">转发最多</string>
+
+    <string name="hot_comments_daily">最近一天评论的热门微博</string>
+    <string name="hot_comments_weekly">最近一周评论的热门微博</string>
+    <string name="hot_repost_daily">最近一天转发的热门微博</string>
+    <string name="hot_repost_weekly">最近一周转发的热门微博</string>
+
+    <string name="cancel">取消</string>
+    <string name="determine">确定</string>
+    <string name="upload">发微博</string>
+
+    <string name="user_fragment_main">主页</string>
+    <string name="user_fragment_weibo">微博</string>
+    <string name="user_fragment_pic">相册</string>
+
+    <string name="send_hint">分享新鲜事&#8230;</string>
+    <string name="location">显示位置</string>
+    <string name="send_public">公开</string>
+    <string name="preview">预览</string>
+    <string name="origin_pic">原图</string>
+    <string name="phone_pic">相机胶卷</string>
+    <string name="send">发送</string>
+    <string name="next">下一步</string>
+    <string name="gif">GIF</string>
+
+    <string name="percent">%d%%</string>
+
+
+
+</resources>

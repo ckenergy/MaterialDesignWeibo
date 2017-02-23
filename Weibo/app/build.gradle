@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "cn.net.cc.weibo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        /*ndk {
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a','mips'//, 'x86_64', 'arm64-v8a', mips, mips64...加入需要生成的文件夹
+        }*/
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven {
+            url "http://maven.bughd.com/public"
+        }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    // rest of your app's logic
+    /*splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'armeabi'
+            universalApk false
+        }
+    }*/
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.1.1'
+    }
+}
+/*repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}*/
+
+apply plugin: 'org.greenrobot.greendao'
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+//    compile project(':vitamio')
+    // Because RxAndroid releases are few and far between, it is recommended you also
+
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+
+    //    compile 'com.chanven.lib:cptr:1.0.0'
+
+    //    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    //    compile 'com.android.support:support-v4:23.0.1'
+    //    compile 'com.android.volley:volley:1.0.0'
+
+    //    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    compile files('libs/jsoup-1.9.2.jar')
+    compile (name:'vitamio', ext:'aar')
+//    compile 'com.github.florent37:diagonallayout:1.0.3'
+    compile project(':diagonallayout')
+    compile project(':transition')
+    compile project(':appbarflingbehavior')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.squareup.picasso:picasso:2.5.3-SNAPSHOT'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.jakewharton:butterknife:7.0.1'
+//    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.4'
+//    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.0'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'org.greenrobot:greendao:3.1.1'
+    // This is only needed if you want to use encrypted databases
+    compile 'net.zetetic:android-database-sqlcipher:3.5.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.github.rey5137:material:1.2.4'
+}
+
+
+
+
+
+
+
+

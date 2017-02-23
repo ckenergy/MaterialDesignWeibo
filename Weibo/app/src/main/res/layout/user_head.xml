@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.github.florent37.diagonallayout.DiagonalLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="5dp"
+        app:diagonal_angle="10"
+        app:diagonal_gravity="left">
+
+        <!--<ImageView android:id="@+id/title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>-->
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/title_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </com.github.florent37.diagonallayout.DiagonalLayout>
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/button_bt_float_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        style="@style/LightFABWave"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_vertical"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button android:id="@+id/likes"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white_comment"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:padding="5dp"
+            android:text="@string/likes"
+            android:background="@drawable/comment_btn_bg_selecter"/>
+
+        <Button android:id="@+id/follows"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white_comment"
+            android:lineSpacingExtra="4dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="@string/follows"
+            android:background="@drawable/comment_btn_bg_selecter"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_comment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"/>
+
+</LinearLayout>

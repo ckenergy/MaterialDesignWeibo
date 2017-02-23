@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/cancal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bt_height"
+        android:layout_centerVertical="true"
+        android:text="@string/cancel"
+        android:background="@drawable/comment_btn_bg_selecter"/>
+
+    <LinearLayout
+        android:id="@+id/folder"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/weibo_item_bg_selecter"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp">
+
+        <TextView
+            android:id="@+id/foldername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_pic"
+            android:textColor="#545454"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/folder_arrow"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/down_arrow" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bt_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/next"
+        android:background="@drawable/comment_btn_bg_selecter"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e3e3" />
+</RelativeLayout>

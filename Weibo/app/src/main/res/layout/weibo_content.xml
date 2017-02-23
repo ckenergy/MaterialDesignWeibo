@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--文字内容-->
+    <TextView android:id="@+id/content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/main_text_content_size"
+        tools:text="现在普遍流行的应用程序都采用这种新的设计理念，并且android端上的APP也是采用material design这种设计理念。对于那些还尚未采用这种设计理念的App，这里我提一些自己的概念。"
+        android:textColor="@color/white_comment"/>
+
+    <TextView android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        tools:text="12:50"
+        android:textSize="@dimen/main_text_time_size"
+        android:textColor="@color/light_gray"/>
+
+    <cn.net.cc.weibo.view.MyGridView
+        android:id="@+id/content_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!--转发-->
+    <LinearLayout android:id="@+id/retweeted_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/weibo_item_bg_selecter">
+
+        <!--<View android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/line_bg"/>-->
+
+        <TextView android:id="@+id/retweeted_content_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/main_text_content_size"
+            android:textColor="@color/white_comment"/>
+
+        <TextView android:id="@+id/retweet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            tools:text="12:50"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/main_text_time_size"
+            android:textColor="@color/light_gray"/>
+
+        <cn.net.cc.weibo.view.MyGridView
+            android:id="@+id/retweeted_content_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

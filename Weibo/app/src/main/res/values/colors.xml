@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/navigation_green</color>
+    <color name="colorPrimaryDark">@color/light_blue</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_text_name">#000</color>
+    <color name="white_comment">#969696</color>
+    <color name="list_name">#123747</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="gray">#BEBEBE</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="light_blue">#ABDEF5</color>
+    <color name="light_green">#B5FFD5</color>
+
+    <color name="navigation_blue">#66A8A6</color>
+    <color name="navigation_blue2">#467CDB</color>
+    <color name="navigation_red">#E65540</color>
+    <color name="navigation_yellow">#F2BF63</color>
+    <color name="navigation_green">#65A873</color>B5FFD5
+    <color name="navigation_white">#D9E7C6</color>
+
+    <color name="origin_red">#FC0405</color>
+    <color name="origin_blue">#0303FB</color>
+    <color name="origin_green">#04F705</color>
+
+    <color name="old_lace">#FDF5E6</color>
+    <color name="click_txt">#52BDEB</color>
+
+    <color name="retweet_bg">#E8FFEA</color>
+    <color name="line_bg">@color/light_blue</color>
+
+    <color name="progress">#5588FF</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

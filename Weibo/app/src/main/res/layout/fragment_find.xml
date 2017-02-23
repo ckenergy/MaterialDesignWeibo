@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.net.cc.weibo.find.FindFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <Button android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search" />
+
+        <TextView android:id="@+id/search_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/find"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/public_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView android:id="@+id/public_img"
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/public_"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/public_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/message_title_size"
+            android:text="@string/find_public"/>
+
+        <ImageView
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>-->
+
+    <RelativeLayout android:id="@+id/hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView android:id="@+id/hot_img"
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/hot"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hot_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/message_title_size"
+            android:text="@string/find_hot"/>
+
+        <ImageView
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/down_arrow_src"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>-->
+
+    <RelativeLayout android:id="@+id/hot_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp">
+
+        <View android:id="@+id/hot_comments_line"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/find_item"
+            android:layout_alignParentLeft="true"
+            android:background="@color/light_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hot_comments_line"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/find_hot_comments"/>
+
+        <ImageView
+            android:layout_width="@dimen/find_item"
+            android:layout_height="@dimen/find_item"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/light_gray"/>-->
+
+    <RelativeLayout android:id="@+id/hot_repost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp">
+
+        <View android:id="@+id/hot_repost_line"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/find_item"
+            android:layout_alignParentLeft="true"
+            android:background="@color/light_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hot_repost_line"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/find_hot_repost"/>
+
+        <ImageView
+            android:layout_width="@dimen/find_item"
+            android:layout_height="@dimen/find_item"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/light_gray"/>-->
+
+</LinearLayout>

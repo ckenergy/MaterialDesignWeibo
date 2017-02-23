@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".message.MessageFragment">
+
+    <TextView android:id="@+id/search_txt"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/message"
+        android:background="@color/navigation_green"/>
+
+
+    <RelativeLayout android:id="@+id/aite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView android:id="@+id/aite_img"
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/aite_c"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/aite_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/message_title_size"
+            android:text="@string/aite"/>
+
+        <ImageView
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>-->
+
+    <RelativeLayout android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView android:id="@+id/comment_img"
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/comment_c"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/comment_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/message_title_size"
+            android:text="@string/comment"/>
+
+        <ImageView
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>-->
+
+    <RelativeLayout android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView android:id="@+id/like_img"
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/like_c"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/like_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/message_title_size"
+            android:text="@string/attitude"/>
+
+        <ImageView
+            android:layout_width="@dimen/message_icon_size"
+            android:layout_height="@dimen/message_icon_size"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray"/>-->
+
+</LinearLayout>

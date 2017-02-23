@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/main_icon_size"
+        android:layout_height="@dimen/main_icon_size"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/login_bg"/>
+
+    <TextView android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/icon"
+        android:textSize="@dimen/main_text_name_size"
+        tools:text="Event Details"
+        android:textColor="@color/list_name"/>
+
+    <TextView android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/name"
+        android:textSize="@dimen/main_text_from_size"
+        tools:text="12:00  来自weibo"
+        android:textColor="@color/main_text_name"/>
+
+</RelativeLayout>

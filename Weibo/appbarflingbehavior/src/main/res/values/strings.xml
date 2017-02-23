@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppBarFlingBehavior</string>
+
+    <string name="fling_behavior">android.support.design.widget.AppBarFlingFixBehavior</string>
+</resources>

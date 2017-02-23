@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/idea_cancal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bt_height"
+        android:layout_centerVertical="true"
+        android:text="@string/cancel"
+        android:background="@drawable/comment_btn_bg_selecter"/>
+
+    <TextView
+        android:id="@+id/inputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/upload"
+        android:textColor="#545454"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/idea_send"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bt_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/send"
+        android:background="@drawable/comment_btn_bg_selecter"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e3e3" />
+</RelativeLayout>
