@@ -23,7 +23,7 @@ import cn.net.cc.weibo.R;
 import cn.net.cc.weibo.imageLoad.BitmapRequest;
 import cn.net.cc.weibo.imageLoad.ImageLoader;
 import cn.net.cc.weibo.info.Constants;
-import cn.net.cc.weibo.main.WeiboMainActivity;
+import cn.net.cc.weibo.ui.main.WeiboMainActivity;
 import cn.net.cc.weibo.post.bean.CommentReplyBean;
 import cn.net.cc.weibo.post.bean.WeiBoCommentBean;
 import cn.net.cc.weibo.post.bean.WeiBoCreateBean;

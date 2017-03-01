@@ -7,14 +7,14 @@ import java.io.File;
 import cn.net.cc.weibo.http.HttpManager;
 import cn.net.cc.weibo.http.okhttp.OkHttpClientFactory;
 import cn.net.cc.weibo.http.okhttp.ProgressListener;
-import cn.net.cc.weibo.imageview.IImageView;
+import cn.net.cc.weibo.ui.imageview.IImageView;
 
 /**
  * Created by chengkai on 2016/8/22.
  */
 public class GifModel implements IGifModel{
 
-    Handler handler = new Handler();
+    private Handler handler = new Handler();
 
     @Override
     public void getGif(String url, final IImageView imageView, ProgressListener progressListener) {

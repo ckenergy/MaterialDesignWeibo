@@ -38,7 +38,7 @@
             android:textSize="@dimen/main_text_content_size"
             android:textColor="@color/main_text_name"/>
 
-        <cn.net.cc.weibo.view.MyGridView
+        <cn.net.cc.weibo.ui.view.MyGridView
             android:id="@+id/content_imgs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

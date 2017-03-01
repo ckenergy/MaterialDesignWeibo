@@ -30,7 +30,7 @@ import cn.net.cc.weibo.post.idea.imagelist.ImgListAdapter;
 import cn.net.cc.weibo.post.picselect.activity.AlbumActivity;
 import cn.net.cc.weibo.post.picselect.bean.AlbumFolderInfo;
 import cn.net.cc.weibo.post.picselect.bean.ImageInfo;
-import cn.net.cc.weibo.view.emojitextview.WeiBoContentTextUtil;
+import cn.net.cc.weibo.ui.view.emojitextview.WeiBoContentTextUtil;
 import openapi.models.Comment;
 import openapi.models.Status;
 import openapi.models.User;

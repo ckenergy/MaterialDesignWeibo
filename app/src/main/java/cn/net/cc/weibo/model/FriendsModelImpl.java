@@ -11,9 +11,9 @@ import com.sina.weibo.sdk.utils.LogUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.net.cc.weibo.base.IListView;
+import cn.net.cc.weibo.ui.base.IListView;
 import cn.net.cc.weibo.db.DatabaseManager;
-import cn.net.cc.weibo.friends.ILoadListModel;
+import cn.net.cc.weibo.ui.friends.ILoadListModel;
 import cn.net.cc.weibo.info.Constants;
 import openapi.legacy.StatusesAPI;
 import openapi.models.ErrorInfo;
@@ -32,11 +32,11 @@ public class FriendsModelImpl implements ILoadListModel {
     private static final int COUNT = Constants.COUNT;
 
     boolean isLoadingmore = false;
-    String firstId;
-    Context mContext;
+    private String firstId;
+    private Context mContext;
 
-    IStatusesAPI<Status> mStatusesAPI;
-    IListView<Status> mFriendsView;
+    private IStatusesAPI<Status> mStatusesAPI;
+    private IListView<Status> mFriendsView;
 
     public FriendsModelImpl(Context context, IListView<Status> friendsView, IStatusesAPI<Status> statusesAPI){
         this.mContext = context;

@@ -19,7 +19,7 @@ import cn.net.cc.weibo.bean.UserBean;
 import cn.net.cc.weibo.imageLoad.BitmapRequest;
 import cn.net.cc.weibo.imageLoad.ImageLoader;
 import cn.net.cc.weibo.info.Constants;
-import cn.net.cc.weibo.login.LoginView;
+import cn.net.cc.weibo.ui.login.LoginView;
 import cn.net.cc.weibo.util.AccessTokenManager;
 import openapi.models.User;
 

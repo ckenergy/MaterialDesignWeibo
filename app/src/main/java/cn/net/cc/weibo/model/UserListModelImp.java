@@ -8,10 +8,10 @@ import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
 import com.sina.weibo.sdk.utils.LogUtil;
 
-import cn.net.cc.weibo.base.IListView;
-import cn.net.cc.weibo.friends.ILoadListModel;
+import cn.net.cc.weibo.ui.base.IListView;
+import cn.net.cc.weibo.ui.friends.ILoadListModel;
 import cn.net.cc.weibo.info.Constants;
-import cn.net.cc.weibo.relationship.IUserListAPI;
+import cn.net.cc.weibo.ui.relationship.IUserListAPI;
 import openapi.models.ErrorInfo;
 import openapi.models.User;
 import openapi.models.UserList;
@@ -26,15 +26,15 @@ public class UserListModelImp implements ILoadListModel{
     /**获取微博条数*/
     private static final int COUNT = 2*Constants.COUNT;
 
-    Context mContext;
+    private Context mContext;
 
-    IListView<User> mCommentListView;
-    IUserListAPI userListAPI;
+    private IListView<User> mCommentListView;
+    private IUserListAPI userListAPI;
 
-    int next_curcor = 0;
-    int pre_curcor = 0;
+    private int next_curcor = 0;
+    private int pre_curcor = 0;
 
-    boolean noMore = false;
+    private boolean noMore = false;
 
     public UserListModelImp(Context context, IListView<User> commentListView, IUserListAPI userListAPI) {
         this.mContext = context;

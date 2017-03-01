@@ -8,8 +8,8 @@ import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
 import com.sina.weibo.sdk.utils.LogUtil;
 
-import cn.net.cc.weibo.base.IListView;
-import cn.net.cc.weibo.friends.ILoadListModel;
+import cn.net.cc.weibo.ui.base.IListView;
+import cn.net.cc.weibo.ui.friends.ILoadListModel;
 import cn.net.cc.weibo.info.Constants;
 import openapi.models.ErrorInfo;
 import openapi.models.Status;
@@ -24,10 +24,10 @@ public class NoIdWeiboModel implements ILoadListModel {
     /**获取评论，转发条数*/
     private static final int COUNT = Constants.COUNT;
 
-    Context mContext;
+    private Context mContext;
 
-    IListView<Status> mListView;
-    INoIdListAPI iNoIdListAPI;
+    private IListView<Status> mListView;
+    private INoIdListAPI iNoIdListAPI;
 
     public NoIdWeiboModel(Context context, IListView<Status> commentListView, INoIdListAPI iNoIdListAPI) {
         this.mContext = context;

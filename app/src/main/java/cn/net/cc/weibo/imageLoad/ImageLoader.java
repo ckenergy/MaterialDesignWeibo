@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 import cn.net.cc.weibo.http.okhttp.ProgressListener;
 import cn.net.cc.weibo.imageLoad.picasso.PicassoProvider;
-import cn.net.cc.weibo.imageview.IImageView;
+import cn.net.cc.weibo.ui.imageview.IImageView;
 import cn.net.cc.weibo.model.IGifModel;
 
 /**

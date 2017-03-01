@@ -21,7 +21,7 @@ public class UrlModel {
 
     private static final String TAG = "UrlModel";
 
-    UrlAPI urlAPI;
+    private UrlAPI urlAPI;
 
     public UrlModel(Context context) {
         Oauth2AccessToken mAccessToken = AccessTokenManager.getAccessToken(context);

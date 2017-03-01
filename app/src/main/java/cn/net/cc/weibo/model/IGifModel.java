@@ -1,7 +1,7 @@
 package cn.net.cc.weibo.model;
 
 import cn.net.cc.weibo.http.okhttp.ProgressListener;
-import cn.net.cc.weibo.imageview.IImageView;
+import cn.net.cc.weibo.ui.imageview.IImageView;
 
 /**
  * Created by chengkai on 2016/8/22.

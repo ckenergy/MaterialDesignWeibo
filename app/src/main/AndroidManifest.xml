@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".main.MyApplication"
+        android:name=".ui.main.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,7 +23,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,13 +31,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login.WebViewActivity"
+            android:name=".ui.login.WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".main.WeiboMainActivity"
+            android:name=".ui.main.WeiboMainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".videos.VideoViewActivity"
+            android:name=".ui.videos.VideoViewActivity"
             />
         <!-- android:process=":vitamio" -->
 
@@ -61,37 +61,37 @@
             android:exported="false" />
         <!-- weibosdk -->
         <activity
-            android:name=".imageview.ImageActivity"
+            android:name=".ui.imageview.ImageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".weiboItem.WeiboItemDetailActivity"
+            android:name=".ui.weiboItem.WeiboItemDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".user.UserActivity11"
+            android:name=".ui.user.UserActivity11"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".user.UserActivity"
+            android:name=".ui.user.UserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".message.AiteActivity"
+            android:name=".ui.message.AiteActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".message.MsgCommentActivity"
+            android:name=".ui.message.MsgCommentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".find.PublicActivity"
+            android:name=".ui.find.PublicActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".hot.HotCommentActivity"
+            android:name=".ui.hot.HotCommentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".hot.HotRepostActivity"
+            android:name=".ui.hot.HotRepostActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".post.idea.IdeaActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".post.picselect.activity.AlbumActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".relationship.RelationshipActivity"
+        <activity android:name=".ui.relationship.RelationshipActivity"
             android:screenOrientation="portrait"/>
         <service android:name=".post.PostService"/>
     </application>

@@ -27,7 +27,7 @@
         android:textSize="@dimen/main_text_time_size"
         android:textColor="@color/light_gray"/>
 
-    <cn.net.cc.weibo.view.MyGridView
+    <cn.net.cc.weibo.ui.view.MyGridView
         android:id="@+id/content_imgs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             android:textSize="@dimen/main_text_time_size"
             android:textColor="@color/light_gray"/>
 
-        <cn.net.cc.weibo.view.MyGridView
+        <cn.net.cc.weibo.ui.view.MyGridView
             android:id="@+id/retweeted_content_imgs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

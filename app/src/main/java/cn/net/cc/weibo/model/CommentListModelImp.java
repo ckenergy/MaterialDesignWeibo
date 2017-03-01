@@ -8,8 +8,8 @@ import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
 import com.sina.weibo.sdk.utils.LogUtil;
 
-import cn.net.cc.weibo.base.IListView;
-import cn.net.cc.weibo.friends.ILoadListModel;
+import cn.net.cc.weibo.ui.base.IListView;
+import cn.net.cc.weibo.ui.friends.ILoadListModel;
 import cn.net.cc.weibo.info.Constants;
 import openapi.models.Comment;
 import openapi.models.CommentList;
@@ -25,11 +25,11 @@ public class CommentListModelImp implements ILoadListModel{
     /**获取微博条数*/
     private static final int COUNT = Constants.COUNT;
 
-    Context mContext;
+    private Context mContext;
 
-    IListView<Comment> mCommentListView;
+    private IListView<Comment> mCommentListView;
 
-    INoIdListAPI commentAPI;
+    private INoIdListAPI commentAPI;
 
     public CommentListModelImp(Context context, IListView<Comment> commentListView, INoIdListAPI commentAPI) {
         this.mContext = context;

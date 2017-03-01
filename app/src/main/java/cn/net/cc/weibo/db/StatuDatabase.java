@@ -5,7 +5,7 @@ import org.greenrobot.greendao.query.Query;
 import java.util.List;
 
 import cn.net.cc.weibo.info.Constants;
-import cn.net.cc.weibo.main.MyApplication;
+import cn.net.cc.weibo.ui.main.MyApplication;
 import openapi.models.Status;
 import openapi.models.StatusDao;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.net.cc.weibo.info.Constants;
-import cn.net.cc.weibo.main.MyApplication;
+import cn.net.cc.weibo.ui.main.MyApplication;
 import openapi.models.Comment;
 import openapi.models.CommentDao;
 import openapi.models.StatusDao;

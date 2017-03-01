@@ -9,8 +9,8 @@ import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
 import com.sina.weibo.sdk.utils.LogUtil;
 
-import cn.net.cc.weibo.base.IListView;
-import cn.net.cc.weibo.friends.ILoadListModel;
+import cn.net.cc.weibo.ui.base.IListView;
+import cn.net.cc.weibo.ui.friends.ILoadListModel;
 import cn.net.cc.weibo.info.Constants;
 import cn.net.cc.weibo.util.AccessTokenManager;
 import openapi.RetweetList;
@@ -33,11 +33,10 @@ public class RetweetListModelImp implements ILoadListModel{
     /** 用于获取微博信息流等操作的API */
     private StatusesAPI mStatusesAPI;
 
-    Context mContext;
+    private Context mContext;
 
-    IListView<Status> mRetweetListView;
-    long id;
-
+    private IListView<Status> mRetweetListView;
+    private long id;
 
     public RetweetListModelImp(Context context, IListView<Status> retweetListView, long id){
         this.mContext = context;
