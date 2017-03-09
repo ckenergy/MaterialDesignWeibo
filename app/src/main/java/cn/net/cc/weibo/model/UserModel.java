@@ -144,6 +144,7 @@ public class UserModel {
             if (user != null) {
                 mUserListener.setUser(user);
             }else {
+                Log.d(TAG,e.getMessage());
                 ErrorInfo info = ErrorInfo.parse(e.getMessage());
                 mUserListener.setError(info.toString());
             }

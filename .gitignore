@@ -45,4 +45,6 @@ out/
 # Keystore files
 *.jks
 
+# old lib
+jnilib/ 
 stackcardlayoutmanager/upload
