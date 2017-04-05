@@ -151,7 +151,7 @@ public class WeiboItemAdapter extends BaseAdapter<Status> {
         }
         setContentTxt(status.text, mContext, contentTxt);
         GridView contentImgs = holder.getView(R.id.content_imgs);
-        setImagesList(contentImgs,status,listPosition);
+        setImagesList(contentImgs, status, listPosition);
     }
 
     private User getUser(Status status) {

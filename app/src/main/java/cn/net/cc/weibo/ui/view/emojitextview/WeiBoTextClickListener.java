@@ -105,7 +105,7 @@ public class WeiBoTextClickListener extends WeiBoContentTextUtil.SimpleClickList
                     public void succed(String urlStr) {
                         handler.sendEmptyMessage(ProgressHandler.DISMISS_PROGRESS);
 //                        Toast.makeText(context, "urlStr", Toast.LENGTH_SHORT).show();
-                        VideoViewActivity.StartThis(context,urlStr);
+                        VideoViewActivity.StartThis(context, urlStr);
                     }
 
                     @Override

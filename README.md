@@ -8,6 +8,7 @@ Material Design风格的微博客户端，可以使用大部分和新浪微博�
 ####登录
 <img src="./img/login.png" width = "225" height = "400"  />
 ####首页
+白色背景下使用有一点灰色的字体，评论和点赞小图标使用灰色和更圆润图片
 <img src="./img/main.png" width = "225" height = "400"  />
 ####我的
 <img src="./img/me.png" width = "225" height = "400"  />
@@ -31,6 +32,12 @@ Material Design风格的微博客户端，可以使用大部分和新浪微博�
 未关注用户查询</br>
 #####如果你哪天发现没有数据，不用急着找代码bug，有可能是接口限制了
 
+###参考了
+https://github.com/wenmingvs/WeiBo
+
+https://github.com/florent37/DiagonalLayout
+
+https://github.com/ckenergy/TransitionsView
 #### License ####
 
 	Copyright 2016 ckenergy <2ckenergy@gmail.com>

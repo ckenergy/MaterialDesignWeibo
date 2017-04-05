@@ -28,9 +28,6 @@ import cn.net.cc.weibo.R;
 import cn.net.cc.weibo.ui.user.UserActivity;
 import cn.net.cc.weibo.util.DensityUtil;
 
-/**
- * Created by wenmingvs on 16/4/16.
- */
 //TODO callback
 public class WeiBoContentTextUtil {
 
@@ -212,7 +209,7 @@ public class WeiBoContentTextUtil {
                         int indexMove = event.findPointerIndex(id);
                         int currentX = (int) event.getX(indexMove);
                         int currentY = (int) event.getY(indexMove);
-                        Log.d(TAG, "ACTION_UP,x:"+currentX+",y:"+currentY);
+                        Log.d(TAG, "ACTION_MOVE,x:"+currentX+",y:"+currentY);
                         if (Math.abs(currentX-downX) < slop && Math.abs(currentY-downY) < slop) {
                             if (downSection == null) {
                                 return false;
