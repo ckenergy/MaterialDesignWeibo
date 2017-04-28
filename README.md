@@ -60,7 +60,9 @@ https://github.com/wenmingvs/WeiBo
 
 https://github.com/florent37/DiagonalLayout
 
-https://github.com/ckenergy/TransitionsView   ** MaterialDesign风格界面跳转
+https://github.com/ckenergy/TransitionsView   
+
+**MaterialDesign风格界面跳转**
 
 #### License ####
 
